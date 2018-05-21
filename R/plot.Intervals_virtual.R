@@ -8,6 +8,7 @@ plot.Intervals_full <- function(
                                 use_points = TRUE,
                                 use_names = TRUE,
                                 names_cex = 1,
+                                col_text = NULL,
                                 ...
                                 )
 {
@@ -59,7 +60,8 @@ plot.Intervals_full <- function(
          rownames( x ),
          pos = 3, offset = .5,
          cex = names_cex,
-         xpd = NA
+         xpd = NA,
+         col = text_col
          )         
   }
   if ( axes )
